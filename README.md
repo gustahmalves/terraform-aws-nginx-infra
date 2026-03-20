@@ -20,14 +20,11 @@ The goal of this project is to demonstrate Infrastructure as Code (IaC) using Te
 
 
 Internet
-│
-▼
+>
 Internet Gateway
-│
-▼
+>
 Public Subnet
-│
-▼
+>
 EC2 Instance (Nginx)
 
 
