@@ -54,6 +54,7 @@ EC2 Instance (Nginx)
   - Backup Plan (scheduled)
   - Backup Selection (EC2)
 - S3 bucket with versioning enabled
+- EC2 Key Pair for SSH access
 
 ---
 
@@ -88,6 +89,11 @@ http://<PUBLIC_IP>
 
 Port 80 (HTTP) open to the internet
 Port 22 (SSH) configurable (recommended: restrict to your IP)
+
+🔑 Access
+
+The EC2 instance is associated with an SSH key pair generated locally using `ssh-keygen`.
+This allows secure remote access for administration, troubleshooting, and validation of the deployed Nginx service.
 
 💾 Backup Strategy
 
